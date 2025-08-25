@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Vazir";
+  src: url("./assets/fonts/Vazirmatn-Black.ttf") format("woff2");
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE و Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.inset-rounded {
+  --corner-radius: 20px;
+
+  /* Webkit prefix for Chrome, Safari */
+  -webkit-mask-image: radial-gradient(
+      circle var(--corner-radius) at top left,
+      transparent 0px,
+      transparent 18px,
+      black 19px
+    ),
+    radial-gradient(
+      circle var(--corner-radius) at top right,
+      transparent 0px,
+      transparent 18px,
+      black 19px
+    ),
+    radial-gradient(
+      circle var(--corner-radius) at bottom right,
+      transparent 0px,
+      transparent 18px,
+      black 19px
+    ),
+    radial-gradient(
+      circle var(--corner-radius) at bottom left,
+      transparent 0px,
+      transparent 18px,
+      black 19px
+    );
+  -webkit-mask-composite: destination-in;
+
+  /* Standard property */
+  mask-image: radial-gradient(
+      circle var(--corner-radius) at top left,
+      transparent 0px,
+      transparent 18px,
+      black 19px
+    ),
+    radial-gradient(
+      circle var(--corner-radius) at top right,
+      transparent 0px,
+      transparent 18px,
+      black 19px
+    ),
+    radial-gradient(
+      circle var(--corner-radius) at bottom right,
+      transparent 0px,
+      transparent 18px,
+      black 19px
+    ),
+    radial-gradient(
+      circle var(--corner-radius) at bottom left,
+      transparent 0px,
+      transparent 18px,
+      black 19px
+    );
+  mask-composite: intersect;
+}
