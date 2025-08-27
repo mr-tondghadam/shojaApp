@@ -1,10 +1,8 @@
 import BtnComponent from "../shared/btnCustom";
-import Heading from "../shared/heading";
-
 const BanerH = ({ data = {} }) => {
   return (
     <div
-      className={`text-white md:p-5 overflow-hidden h-[550px] md:max-h-[400px] py-10 mx-auto w-[100%] md:w-[90%] `}>
+      className={`text-white md:p-5 overflow-hidden h-[550px] md:max-h-[400px] py-3 lg:py-10 mx-auto w-[100%] md:w-[90%] `}>
       <div
         className={`flex flex-col md:flex-row w-[100%] ${data?.background} h-full md:h-[300px] rounded-lg items-center justify-center lg:gap-52`}>
         <div className='relative'>

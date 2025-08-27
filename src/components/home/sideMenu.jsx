@@ -99,10 +99,10 @@ const SideMenu = ({ show, setShow }) => {
   const [index, setIndex] = useState(null);
   return (
     <div
-      className={`fixed font-vazir z-50 top-0 transition-all overflow-y-auto duration-300 shadow-md bg-white ${
+      className={`fixed font-vazir z-50 top-0 transition-all overflow-y-auto duration-300 shadow-md bg-slate-100 ${
         show ? "right-0" : "-right-[110%]"
       }  h-full w-[80%] md:w-[400px]`}>
-      <div className=' top-0 right-0 w-full text-xl md:text-4xl p-5'>
+      <div className='top-0 right-0 w-full text-xl md:text-3xl p-5'>
         <IoMdCloseCircle
           onClick={() => {
             setShow(false);

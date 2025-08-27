@@ -1,20 +1,32 @@
-import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "../pages/web/home";
 import App from "../App";
+import LoginPage from "../pages/web/login";
+import RegisterPage from "../pages/web/register";
+import ArticlePage from "../pages/web/ArticlePage";
+import ProductPage from "../pages/web/ProductPage";
+import ScrollToTop from "../components/shared/ScrollToTop";
+import ForgetPass from "../pages/web/forgetPass";
+import Cart from "../pages/web/Cart";
 
 const AppRoutes = () => (
-  <Routes>
-    <Route path='/' element={<App />}>
-      <Route path='' element={<Home />} />
+  <>
+    <ScrollToTop />
+    <Routes>
+      <Route path='/' element={<App />}>
+        <Route path='' element={<Home />} />
+        <Route path='login' element={<LoginPage />} />
+        <Route path='register' element={<RegisterPage />} />
+        <Route path='article' element={<ArticlePage />} />
+        <Route path='product-page' element={<ProductPage />} />
+        <Route path='forget-pass' element={<ForgetPass />} />
+        <Route path='cart' element={<Cart />} />
 
-      {/* <Route path='login' element={<Login />} />
-      <Route path='register' element={<Register />} />
-      <Route path='about' element={<About />} />
+        {/*   <Route path='about' element={<About />} />
       <Route path='single-publication/:tag' element={<SinglePublication />} />
       <Route path='single-portfolio/:id' element={<SinglePortfolio />} /> */}
 
-      {/* <Route path='admin-panel' element={<AdminPanel />}>
+        {/* <Route path='admin-panel' element={<AdminPanel />}>
         //* certificates
         <Route path='certificates' element={<IndexCertificate />} />
         <Route path='add-certificate' element={<AddCertificate />} />
@@ -30,8 +42,9 @@ const AppRoutes = () => (
       </Route>
 
       <Route path='*' element={<NotFound />} /> */}
-    </Route>
-  </Routes>
+      </Route>
+    </Routes>
+  </>
 );
 
 export default AppRoutes;

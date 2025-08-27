@@ -85,12 +85,12 @@ const sicial = [
 const Footer = () => {
   return (
     <div className='w-full font-vazir relative z-20 lg:pt-1 text-slate-300 overflow-hidden h-[70vh] gap-2 flex bg-red-500 md:h-[40vh] flex-col px-10'>
-      <ImgFlout style='bottom-0 h-[100%] md:h-[100%]' bgStyle='bg-opacity-90' />
+      <ImgFlout style='bottom-0 h-[100%] md:h-[100%]' bgStyle='bg-opacity-80' />
       <div className='flex flex-col lg:flex-row text-sm lg:text-xl w-full h-full justify-center items-center'>
         <div className='w-full lg:max-w-[40%] flex z-20 lg:h-[100%] text-center gap-10 items-center justify-start'>
           <ul className='flex flex-col list-disc list-inside text-right'>
             {contacts?.map((a, i) => (
-              <li>
+              <li key={i}>
                 <Link className=' hover:text-yellow-500'> {a?.title}</Link>
               </li>
             ))}
@@ -102,7 +102,7 @@ const Footer = () => {
             <p>ارتباط با ما :</p>
             <ul className='flex gap-5 text-xl lg:text-4xl list-inside text-right'>
               {sicial?.map((a, i) => (
-                <li className='cursor-pointer  hover:text-yellow-500'>
+                <li key={i} className='cursor-pointer  hover:text-yellow-500'>
                   <a href={a?.link} className='w-full h-full'>
                     {a?.title}
                   </a>
@@ -113,7 +113,7 @@ const Footer = () => {
           <div className='w-full flex z-20 h-[100%] text-center gap-10 items-center justify-start'>
             <ul className='flex flex-col list-disc list-inside text-right'>
               {fastAccess?.map((a, i) => (
-                <li className=' hover:text-yellow-500'>
+                <li key={i} className=' hover:text-yellow-500'>
                   <Link>{a?.title}</Link>
                 </li>
               ))}

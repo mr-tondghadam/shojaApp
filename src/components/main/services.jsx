@@ -31,7 +31,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section className='grid overflow-hidden font-vazir grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-6 px-4 md:px-20 py-2 md:py-10'>
+    <section className='grid overflow-hidden font-vazir grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-6 px-2 lg:px-28 md:px-20 md:py-5'>
       {services.map((service, idx) => (
         <div
           data-aos='fade-up'

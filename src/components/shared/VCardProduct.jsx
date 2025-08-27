@@ -31,7 +31,7 @@ const VCardProduct = ({
   };
 
   return (
-    <div className='container mx-auto px-1 overflow-y-hidden md:px-4 gap-2 my-6 relative'>
+    <div className='container  mx-auto px-2 lg:px-5 overflow-y-hidden md:px-2 gap-2 my-6 relative'>
       <h2
         data-aos='fade-up'
         className='text-2xl text-slate-800 mb-3 font-bold py-2 text-center'>
@@ -64,18 +64,18 @@ const VCardProduct = ({
             <Link
               data-aos={dataAos}
               data-aos-delay={(index + 1) * 50}
-              to={`#`}
+              to='/product-page'
               key={el._id}
-              className=' group flex relative bg-white flex-col justify-start items-center min-w-[180px] overflow-hidden m-1 md:m-3 h-full md:min-w-[280px] md:max-w-[320px] p-2  shadow-xl rounded'>
-              <div className='flex flex-col text-center'>
+              className=' group flex transition-all hover:bg-slate-300 relative bg-white flex-col justify-start items-center min-w-[180px] overflow-hidden m-1 md:m-3 h-full md:min-w-[280px] md:max-w-[320px] p-2  shadow-xl rounded'>
+              <div className='flex  flex-col text-center'>
                 {/* <button
                   onClick={() => {}}
                   className='bg-white me-6 mt-5 z-50 absolute rounded-full left-0 top-0  p-2 text-2xl md:font-bold self-end   text-black shadow-lg hover:bg-red-500 hover:scale-95 hover:text-white transition-all'>
                   <CiHeart />
                 </button> */}
 
-                <div className='absolute rounded-md duration-300 ms-2 md:ms-6 right-0 top-8 bg-red-500 px-2'>
-                  <span className='relative mt-0 md:mt-5 z-50 text-xs md:font-bold self-end text-white shadow-lg'>
+                <div className='absolute rounded-md duration-300 ms-2 z-50 md:ms-6 right-0 top-8 bg-red-500 group-hover:scale-125 px-2'>
+                  <span className='relative mt-0 md:mt-5 z-50 text-xs md:font-bold self-end bg-red-500 text-white shadow-lg'>
                     {Math.floor(
                       100 - (Number(el?.sellingPrice) / Number(el?.price)) * 100
                     )}{" "}
@@ -88,7 +88,7 @@ const VCardProduct = ({
                   <img
                     src={el.productImage}
                     alt={el?.productName}
-                    className='object-scale-down h-full mix-blend-multiply rounded-md hover:scale-110 transition-all'
+                    className='object-scale-down h-full mix-blend-multiply rounded-md group-hover:scale-95 transition-all'
                   />
                 </div>
                 <div className='p-0 md:p-3 grid'>

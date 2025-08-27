@@ -4,8 +4,8 @@ import Services from "./services";
 
 const WhyUs = () => {
   return (
-    <div className='md:mt-20 -z-50 overflow-hidden'>
-      <Heading styles='mt-2 text-xl md:text-4xl' text='چرا ما؟' />
+    <div className='mt-3 md:mt-5 -z-50 overflow-hidden'>
+      {/* <Heading styles='mt-2 text-xl md:text-4xl' text='چرا ما؟' /> */}
       <Services />
     </div>
   );

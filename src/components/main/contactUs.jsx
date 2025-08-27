@@ -3,7 +3,7 @@ import whats from "../../assets/social/R.webp";
 import BtnComponent from "../shared/btnCustom";
 const ContactUs = () => {
   return (
-    <div className='flex h-[400px] lg:h-[300px] overflow-hidden w-[100%] mx-auto flex-col lg:flex-row justify-center gap-8 items-center'>
+    <div className='flex h-[400px] px-2 lg:h-[300px] overflow-hidden w-[100%] mx-auto flex-col lg:flex-row justify-center gap-8 items-center'>
       <div
         data-aos='fade-up'
         className='px-3 py-1 h-[45%] lg:h-full flex justify-center items-center w-full lg:w-[40%] gap-2 md:gap-10 rounded-lg bg-gradient-to-r group from-[#BD318E]  to-[#F69020] '>

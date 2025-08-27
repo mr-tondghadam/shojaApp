@@ -13,7 +13,7 @@ function App() {
   const [showSideMenu, setShowSideMenu] = useState(false);
   useEffect(() => {
     AOS.init({
-      duration: 400,
+      duration: 600,
       easing: "ease-out-sine",
       delay: 0,
       offset: 80,
@@ -32,8 +32,8 @@ function App() {
             setShowSideMenu={setShowSideMenu}
           />
           <SideMenu show={showSideMenu} setShow={setShowSideMenu} />
-          <ImgFlout />
-          <main className='px-4 mt-10'>
+
+          <main className=''>
             <Outlet />
           </main>
 

@@ -40,7 +40,7 @@ const Articles = () => {
   return (
     <section
       aria-label='نوشته‌ها و مقالات'
-      className='flex flex-col border-b pb-10 border-neutral-700'>
+      className='flex flex-col border-b pb-10  border-neutral-700'>
       <Heading text='نوشته ها' />
 
       <div className='select-none w-[90%] mx-auto'>
@@ -87,7 +87,8 @@ const Articles = () => {
                   </h3>
                   <BtnComponent
                     text='بیشتر...'
-                    to={`/single-publication/${p?.tag}`}
+                    // to={`/single-publication/${p?.tag}`}
+                    to='/article'
                     aria-label={`بیشتر درباره مقاله ${p.title}`}
                   />
                 </div>

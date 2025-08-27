@@ -1,10 +1,11 @@
-import React from "react";
 import BtnComponent from "../shared/btnCustom";
+import ImgFlout from "./imgFlout";
 
 const HiroSection = () => {
   return (
-    <div className='w-full relative z-20 text-white overflow-hidden h-[70vh] md:h-[60vh] flex items-center flex-col justify-center'>
-      <div className='w-full flex flex-col text-center items-center justify-center'>
+    <div className='w-full relative  pt-10 px-5 text-white overflow-hidden h-[70vh] md:h-[70vh] flex items-center flex-col justify-center'>
+      <ImgFlout style='top-0 h-[100%] z-10' />
+      <div className='w-full flex flex-col z-20 text-center items-center justify-center'>
         <div className='flex flex-col md:flex-row md:w-[80%] justify-center items-center md:gap-10'>
           <p data-aos='fade-left' className='text-2xl lg:text-4xl font-vazir'>
             به فروشگاه{" "}
@@ -12,7 +13,7 @@ const HiroSection = () => {
           <h1
             data-aos='zoom-in'
             className='text-3xl my-3 lg:text-6xl md:my-5 font-vazir'>
-            شجاع <span className='text-orange-500'>پارت</span>{" "}
+            شجاع <span className='text-yellow-500'>پارت</span>{" "}
           </h1>
           <p data-aos='fade-right' className='text-xl lg:text-4xl font-vazir'>
             خوش آمدید
@@ -27,7 +28,7 @@ const HiroSection = () => {
           </h3>
           <div data-aos='zoom-out' className='w-[100%] md:w-[80%]'>
             <input
-              className='font-vazir w-[100%] md:w-[60%] text-black outline-none text-xl px-5 py-4 rounded-md'
+              className='font-vazir w-[100%] md:w-[60%] text-black outline-none text-sm lg:text-xl px-2 py-1 lg:px-5 lg:py-4 rounded-md'
               placeholder='جستوجو در شجاع پارت'
             />
           </div>
@@ -36,7 +37,7 @@ const HiroSection = () => {
         <p
           data-aos='fade-up'
           data-aos-delay='300'
-          className='text-xl md:text-2xl border-b border-orange-400 md:mt-7 bg-black bg-opacity-60 p-2 rounded-md font-vazir'>
+          className='text-sm md:text-2xl border-b border-orange-400 mt-4 md:mt-7 bg-black bg-opacity-60 p-2 rounded-md font-vazir'>
           {" "}
           قطعات با کیفیت و اصل را از ما بخواهید
         </p>

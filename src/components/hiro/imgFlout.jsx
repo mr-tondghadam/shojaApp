@@ -5,7 +5,7 @@ const ImgFlout = ({
   bgStyle = "bg-opacity-60",
 }) => {
   return (
-    <div className={`w-full z-10 absolute  ${style} right-0`}>
+    <div className={`w-full z-0 absolute  ${style} right-0`}>
       <img
         className='w-full blur-[1px] h-full object-cover'
         src={BeygirImage}
